@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kyo Showreel</title>
+<style>
+  @font-face { font-family: SpaceMono; font-weight: 400; src: url(assets/SpaceMonoNerdFont-Regular.ttf); }
+  @font-face { font-family: SpaceMono; font-weight: 700; src: url(assets/SpaceMonoNerdFont-Bold.ttf); }
+  @font-face { font-family: Geomanist; font-weight: 400; src: url(assets/GeomanistRegural.ttf); }
+  @font-face { font-family: Geomanist; font-weight: 700; src: url(assets/GeomanistBold.ttf); }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  body { display: grid; place-items: center; }
+  canvas { display: block; width: 100vw; height: 56.25vw; max-height: 100vh; max-width: 177.78vh; }
+  #hint { position: fixed; left: 16px; bottom: 12px; font: 12px monospace; color: #666; }
+  body.render #hint { display: none; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<div id="hint">space: play/pause · click: scrub</div>
+<script src="reel.js"></script>
+</body>
+</html>
